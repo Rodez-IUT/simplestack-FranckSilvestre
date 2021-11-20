@@ -3,7 +3,7 @@ package org.mpa;
 public class DefaultStack implements SimpleStack {
     @Override
     public boolean isEmpty() {
-        return false;
+        return true;
     }
 
     @Override
