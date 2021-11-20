@@ -24,7 +24,8 @@ public class DefaultStack implements SimpleStack {
 
     @Override
     public Item peek() throws EmptyStackException {
-        return null;
+        if (isEmpty()) throw new EmptyStackException();
+        return itemList.get(itemList.size() -1);
     }
 
     @Override
