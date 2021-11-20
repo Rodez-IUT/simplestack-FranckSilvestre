@@ -16,5 +16,22 @@ class DefaultStackTest {
         assertEquals(0, simpleStack.getSize());
     }
 
+    @Test
+    void testPush() {
+        // given a new simle stack
+        SimpleStack simpleStack = new DefaultStack();
+        // and an item
+        Item item = new DefaultItem("Un item");
+
+        // When push the item in the stack
+        simpleStack.push(item);
+
+        // then the stack is no more empty
+        assertFalse(simpleStack.isEmpty());
+        // and the stack contains one element
+        assertEquals(1, simpleStack.getSize());
+
+    }
+
 
 }

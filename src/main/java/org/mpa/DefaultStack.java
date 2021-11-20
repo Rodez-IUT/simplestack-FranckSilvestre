@@ -1,19 +1,25 @@
 package org.mpa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DefaultStack implements SimpleStack {
+
+    private List<Item> itemList = new ArrayList<>();
+
     @Override
     public boolean isEmpty() {
-        return true;
+        return itemList.isEmpty();
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return itemList.size();
     }
 
     @Override
     public void push(Item item) {
-
+        itemList.add(item);
     }
 
     @Override
