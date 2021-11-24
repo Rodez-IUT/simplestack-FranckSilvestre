@@ -1,5 +1,5 @@
 package org.mpa;
 
-// un commentaire augmenté
+// un commentaire augmenté bis
 public class FsilItem implements Item {
 }
