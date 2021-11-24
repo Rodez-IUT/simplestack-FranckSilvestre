@@ -31,6 +31,7 @@ public class DefaultStack implements SimpleStack {
     @Override
     public Item pop() throws EmptyStackException {
         // oh yeah !
+        // great
         Item result = peek();
         itemList.remove(result);
         return result;
