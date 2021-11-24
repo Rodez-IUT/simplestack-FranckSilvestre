@@ -102,6 +102,12 @@ Chaque collaborateur doit alors :
 5. "Envoyer" la branche sur le dépôt partagé de GitHub.
 Vérifier sur GitHub que les deux branches sont dans le dépôt partagé.
 
+6. Chaque collaborateur intègre à sa branche master les modifications effectuée sur sa branche.
+   Ensuite un des deux collaborateurs (C1) effectue un push de la branche master sur le dépôt distant.
+   L'autre collaborateur (C2) récupère la dernière version de la branche master sur sa branche master local puis push à son tour
+   la branche master. (C1) récupère les modifications de la branche master.
+   (C1) et (C2) vérifie qu'ils ont la même chose sur leur branche locale master.
+
 ## Exercice 5 – Duo work avec résolution de conflit
 
 1. Chaque collaborateur doit basculer sur sa branche “master” et faire une fusion de la branche précédemment créée.  
